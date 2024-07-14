@@ -1,6 +1,8 @@
 import { helpers } from '@gracile/gracile/document';
 import { html } from '@gracile/gracile/server-html';
 
+import { testComponent } from 'components/testComponent';
+
 export const document = (options: { url: URL; title?: string }) => html`
 	<!doctype html>
 	<html lang="en">
@@ -34,6 +36,7 @@ export const document = (options: { url: URL; title?: string }) => html`
 
 		<body>
 			<route-template-outlet></route-template-outlet>
+			${testComponent}
 		</body>
 	</html>
 `;
