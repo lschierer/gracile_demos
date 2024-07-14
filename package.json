@@ -1,0 +1,16 @@
+{
+  "name": "@gracile/template--minimal",
+  "type": "module",
+  "version": "0.0.2",
+  "scripts": {
+    "dev": "gracile-dev",
+    "build": "gracile build",
+    "preview": "gracile preview"
+  },
+  "dependencies": {
+    "@gracile/gracile": "0.1.1"
+  },
+  "devDependencies": {
+    "typescript": "5.5.3"
+  }
+}
