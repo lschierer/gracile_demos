@@ -1,7 +1,7 @@
 import { helpers } from '@gracile/gracile/document';
 import { html } from '@gracile/gracile/server-html';
 
-import { testComponent } from 'components/testComponent';
+import { testComponent } from '@components/testComponent';
 
 export const document = (options: { url: URL; title?: string }) => html`
 	<!doctype html>

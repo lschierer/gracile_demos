@@ -1,13 +1,13 @@
 {
   "extends": "@gracile/gracile/tsconfigs/strictest",
   "compilerOptions": {
-		"baseUrl": "./",
-		"paths": {
-			"components/*": ["./src/components/*"]
-		}
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": ["./src/components/*"]
+    }
   },
   "include": [
-  	"gracile.config.ts",
-	"src/**/*.ts"
+    "gracile.config.ts",
+  "src/**/*.ts"
   ]
 }

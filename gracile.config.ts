@@ -1,15 +1,11 @@
 import { defineConfig } from '@gracile/gracile';
-import { resolve } from 'path'
-
-const root = resolve(__dirname, "src");
+import tsconfigPaths from 'vite-tsconfig-paths'
+import path from 'path'
 
 export default defineConfig({
-	port: 4567,
-	vite: {
-		resolve: {
-			alias: {
-				"components": resolve(root, "components"),
-			}
-		}
-	}
+  vite: {
+    plugins: [
+      tsconfigPaths(),
+    ]
+  }
 });
